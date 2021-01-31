@@ -1,0 +1,11 @@
+.information {
+    background-color: $blockColorSecond;
+    
+    &__container {
+        padding: 70px 0;
+        
+        &--inner {
+            &:not(:last-child) { margin-bottom: 120px; }
+        }
+    }
+}

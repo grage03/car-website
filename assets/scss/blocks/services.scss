@@ -1,0 +1,44 @@
+.services {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        &__item {
+            padding: 70px 50px;
+            background-color: #393F47;
+            transition: .2s linear;
+            
+            &:hover {
+                img {
+                    filter: invert(1);
+                }
+                
+                cursor: pointer;
+                background-color: $blockColorFirst;
+                border-radius: 15px;
+            }
+            
+            &--active {
+                background-color: $blockColorFirst;
+                border-radius: 15px;
+                
+                img {
+                    filter: invert(1);
+                }
+            }
+            
+            margin-bottom: 10px;
+        }
+    }
+    
+    img {
+        display: block;
+        width: 40px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        
+        transition: .2s linear;
+    }
+}

@@ -1,0 +1,95 @@
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .europe {
+        &__truck { transform: translateY(25%); }
+    }
+    
+    .services {
+        &__nav {
+            justify-content: space-around;
+            
+            &__item { padding: 70px 75px; }
+        }
+    }
+    
+    .about {
+        &__text { width: 100%; }
+        
+        &__img { display: none; }
+    }
+}
+
+@media all and (max-width: 411px) {
+    h1 { font-size: 25px; }
+    
+    .container {
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .header {
+        .nav {
+            display: none;
+            
+            &__list {
+                font-size: 11px;
+                align-items: center;
+            }
+            
+            &__item {
+                &:not(:last-child) {
+                    margin-right: 5px;
+                }
+            }
+        }
+        
+        &__menu {
+            display: flex;
+            
+            &--btn {
+                display: flex;
+            }
+        }
+    }
+    
+    .preheader {
+        &__number { display: none; }
+    }
+    
+    .europe {
+        &__text {
+            text-align: center;
+            width: 100%;
+        }
+        
+        &__truck, &__nav { display: none; }
+    }
+    
+    .about {
+        p { text-align: justify; }
+    }
+    
+    .footer { font-size: 11px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

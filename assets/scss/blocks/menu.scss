@@ -1,0 +1,17 @@
+#menu__toggle {
+    opacity: 0;
+    position: absolute;
+}
+
+#menu__toggle:checked ~ .header__menu--btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .header__menu--btn > span::before {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .header__menu--btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}

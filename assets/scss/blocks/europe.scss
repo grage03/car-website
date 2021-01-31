@@ -1,0 +1,29 @@
+.europe {
+    display: flex;
+    justify-content: space-between;
+    
+    &__text {
+        width: 30%;
+    }
+    
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &--item {
+            text-transform: uppercase;
+            color: $blockColorFirst;
+            text-align: right;
+            font-weight: bold;
+            transition: color .2s linear;
+            cursor: pointer;
+            
+            &:hover {
+                .arrow-right, .arrow-left { border-color: white; }
+                
+                color: white;
+            }
+        }
+    }
+}

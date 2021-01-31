@@ -1,0 +1,26 @@
+.transportation {
+    background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)), url('/assets/images/truck.jpg') center;
+    background-size: cover;
+    
+    &__container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 200px 100px;
+    }
+    
+    &__inner {
+        border: 1px solid $blockColorFirst;   
+    }
+    
+    &__title {
+        margin: 30px;
+        font-size: 45px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    &__paragraph {
+        margin: 0 30px 30px;
+    }
+}

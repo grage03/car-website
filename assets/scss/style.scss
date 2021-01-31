@@ -1,0 +1,92 @@
+@import "vars";
+@import "vendor/reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+p, h1, h2 {
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.paragraph {
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 20px;
+    
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 3px;
+        background-color: $blockColorFirst;
+        top: -20px;
+        left: 0;
+        right: 0;
+    }
+}
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    background-color: $blockColorFirst;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@import "blocks/preheader";
+@import "blocks/header";
+@import "blocks/transportation";
+@import "blocks/information";
+@import "blocks/europe";
+@import "blocks/arrow";
+@import "blocks/services";
+@import "blocks/about";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/mobile";
+@import "blocks/menu";
+
+
+
+
+
+
+
+
+

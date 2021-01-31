@@ -1,0 +1,35 @@
+.preheader {
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: $blockColorFirst;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;   
+    }
+    
+    &__address { text-transform: lowercase; }
+}
+
+.nav {
+    
+    &__list { display: flex; }
+    
+    &__item {
+        text-transform: uppercase;
+        list-style: none;
+        
+        &:not(:last-child) { margin-right: 20px; }
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #696969;
+        transition: color .2s linear;
+        
+        &--current { color: white; }
+        
+        &:hover { color: white; }
+    }
+}
